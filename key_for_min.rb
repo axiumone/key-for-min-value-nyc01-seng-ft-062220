@@ -3,11 +3,10 @@
 
 def key_for_min_value(name_hash)
   value_arr = []
-  name_hash.each do |k1,v1|
-    name_hash.each do |k2,v2|
-      if v2 > v1
-        k
-      end
-    end
+  name_hash.each do |k,v|
+    value_arr << v
   end
+  low_v = value_arr.sort
+  ans_value = low_v[0]
+  name_hash[ans_value]
 end
