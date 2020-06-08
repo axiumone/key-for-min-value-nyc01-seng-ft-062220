@@ -4,9 +4,11 @@
 def key_for_min_value(name_hash)
   value_arr = []
   name_hash.each do |k,v|
-    value_arr << v
+    value_arr << [k, v]
   end
   low_v = value_arr.sort
-  ans_value = low_v[0]
-  name_hash[ans_value]
+  low_v[0][0]
 end
+
+
+key_for_min_value(name_hash)
