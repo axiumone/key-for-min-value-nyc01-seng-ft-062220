@@ -7,5 +7,9 @@ def key_for_min_value(name_hash)
     value_arr << [v, k]
   end
   low_v = value_arr.sort
-  low_v[0][1]
+  if low_v != []
+    low_v[0][1]
+  else
+    nil
+  end
 end
